@@ -13,7 +13,7 @@ function calculate(arr) {
   let result
 
   for (let i = 0; i < arr.length; i++) {
-    if (parseInt(arr[i])) {
+    if (parseFloat(arr[i])) {
       newarr.push(arr[i])
     } else if (arr[i] === null) {
       newarr.push(0)
@@ -30,7 +30,7 @@ function calculate(arr) {
   } else if (operator === '/') {
     result = newarr[0] / newarr[1]
   } else {
-    return NaN
+    result = NaN
   }
 
   return result
